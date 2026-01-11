@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes données</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 1200px; 
+            margin: 50px auto; 
+            padding: 20px;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px;
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { 
+            background-color: #4CAF50; 
+            color: white; 
+        }
+        tr:nth-child(even) { 
+            background-color: #f2f2f2; 
+        }
+        tr:hover { 
+            background-color: #ddd; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Données de ma base</h1>
+
+    <?php
+    // Inclure le fichier de connexion
+    require_once 'connexion.php';
+
+    // Requête pour récupérer les données
+    $sql = "SELECT * FROM ta_table"; // Change le nom de la table
+    $stmt = $pdo->query($sql);
+    $resultats = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    ?>
+
+    <table>
+        <thead>
+            <tr>
+                <?php
+                // Afficher les en-têtes (noms des colonnes)
+                if (!empty($resultats)) {
+                    foreach (array_keys($resultats[0]) as $colonne) {
+                        echo "<th>" . htmlspecialchars($colonne) . "</th>";
+                    }
+                }
+                ?>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            // Afficher les données
+            foreach ($resultats as $ligne) {
+                echo "<tr>";
+                foreach ($ligne as $valeur) {
+                    echo "<td>" . htmlspecialchars($valeur) . "</td>";
+                }
+                echo "</tr>";
+            }
+            ?>
+        </tbody>
+    </table>
+
+    <p style="margin-top: 20px; color: #666;">
+        Total : <?php echo count($resultats); ?> enregistrement(s)
+    </p>
+</body>
+</html>
