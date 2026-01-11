@@ -1,133 +1,197 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonnes Ondes - Instruments de musique & accessoires</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bonnes Ondes – Instruments & Bibliographie</title>
+
+    <!-- ===== Feuille de style unique ===== -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #FFD700;
+            color: #333;
+        }
+
+        header {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background: #e8491d;
+        }
+
+        nav a {
+            color: white;
+            padding: 0.75rem 1.2rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #35424a;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: #e8491d;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        article {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        a {
+            color: #e8491d;
+        }
+
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Bonnes Ondes</h1>
-        <p>Votre boutique en ligne d'instruments de musique, partitions et accessoires.</p>
-        <nav>
-            <ul>
-                <li><a href="#instruments">Instruments</a></li>
-                <li><a href="#partitions">Partitions</a></li>
-                <li><a href="#accessoires">Accessoires</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="instruments">
-            <h2>Instruments</h2>
-            <p>Découvrez notre sélection d'instruments de musique.</p>
+<header>
+    <h1>Bonnes Ondes</h1>
+    <p>Instruments de musique, partitions & ressources pédagogiques</p>
+</header>
 
-            <article>
-                <h3>Flûte traversière</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flute_concert_C-footjoint.jpg/800px-Flute_concert_C-footjoint.jpg"
-                     alt="Flûte traversière en ut, instrument à vent de la famille des bois"
-                     title="Flûte traversière en ut">
-                <p>La flûte traversière est un instrument à vent de la famille des bois, très utilisée en orchestre et en musique classique.</p>
-                <p><a href="https://fr.wikipedia.org/wiki/Fl%C3%BBte_traversi%C3%A8re">En savoir plus sur Wikipedia</a></p>
-            </article>
+<nav>
+    <ul>
+        <li><a href="#instruments">Instruments</a></li>
+        <li><a href="#partitions">Partitions</a></li>
+        <li><a href="#accessoires">Accessoires</a></li>
+        <li><a href="#bibliographie">Bibliographie</a></li>
+    </ul>
+</nav>
 
-            <article>
-                <h3>Clarinette</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Clarinet_Bb_1.jpg/800px-Clarinet_Bb_1.jpg"
-                     alt="Clarinette en si bémol, instrument à vent en bois"
-                     title="Clarinette en si bémol">
-                <p>La clarinette est un instrument à vent de la famille des bois, appréciée en jazz et en musique classique.</p>
-                <p><a href="https://fr.wikipedia.org/wiki/Clarinette">En savoir plus sur Wikipedia</a></p>
-            </article>
+<main>
 
-            <article>
-                <h3>Trompette</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Trumpet_1.jpg/800px-Trumpet_1.jpg"
-                     alt="Trompette en si bémol, instrument à vent de la famille des cuivres"
-                     title="Trompette en si bémol">
-                <p>La trompette est un instrument à vent de la famille des cuivres, incontournable en jazz et en fanfare.</p>
-                <p><a href="https://fr.wikipedia.org/wiki/Trompette">En savoir plus sur Wikipedia</a></p>
-            </article>
+    <!-- ===== Instruments ===== -->
+    <section id="instruments">
+        <h2>Instruments</h2>
 
-            <article>
-                <h3>Piano</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Grand_piano_2.jpg/800px-Grand_piano_2.jpg"
-                     alt="Piano à queue, instrument à cordes frappées"
-                     title="Piano à queue">
-                <p>Le piano est un instrument à cordes frappées, polyvalent et utilisé dans presque tous les styles musicaux.</p>
-                <p><a href="https://fr.wikipedia.org/wiki/Piano">En savoir plus sur Wikipedia</a></p>
-            </article>
+        <article>
+            <h3>Flûte traversière</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flute_concert_C-footjoint.jpg" alt="Flûte traversière">
+            <p>Instrument à vent de la famille des bois.</p>
+        </article>
 
-            <article>
-                <h3>Violon</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Violin_front.jpg/800px-Violin_front.jpg"
-                     alt="Violon, instrument à cordes frottées"
-                     title="Violon">
-                <p>Le violon est un instrument à cordes frottées, star des orchestres symphoniques et de la musique traditionnelle.</p>
-                <p><a href="https://fr.wikipedia.org/wiki/Violon">En savoir plus sur Wikipedia</a></p>
-            </article>
-        </section>
+        <article>
+            <h3>Clarinette</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Clarinet_Bb_1.jpg" alt="Clarinette">
+            <p>Instrument à vent utilisé en jazz et en classique.</p>
+        </article>
 
-        <section id="partitions">
-            <h2>Partitions</h2>
-            <p>Retrouvez nos partitions pour tous les niveaux.</p>
+        <article>
+            <h3>Trompette</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Trumpet_1.jpg" alt="Trompette">
+            <p>Instrument à vent de la famille des cuivres.</p>
+        </article>
 
-            <article>
-                <h3>Partition pour flûte</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Flute_sheet_music.jpg/800px-Flute_sheet_music.jpg"
-                     alt="Partition musicale pour flûte traversière, niveau débutant"
-                     title="Partition pour flûte">
-                <p>Partition pour flûte traversière, idéale pour les débutants.</p>
-                <p><a href="https://fr.wikipedia.org/wiki/Partition_(musique)">En savoir plus sur Wikipedia</a></p>
-            </article>
+        <article>
+            <h3>Piano</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Grand_piano_2.jpg" alt="Piano">
+            <p>Instrument à cordes frappées.</p>
+        </article>
 
-            <article>
-                <h3>Partition pour piano</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Piano_sheet_music.jpg/800px-Piano_sheet_music.jpg"
-                     alt="Partition musicale pour piano, niveau intermédiaire"
-                     title="Partition pour piano">
-                <p>Partition pour piano, adaptée aux pianistes intermédiaires.</p>
-                <p><a href="https://fr.wikipedia.org/wiki/Partition_(musique)">En savoir plus sur Wikipedia</a></p>
-            </article>
-        </section>
+        <article>
+            <h3>Violon</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Violin_front.jpg" alt="Violon">
+            <p>Instrument à cordes frottées.</p>
+        </article>
+    </section>
 
-        <section id="accessoires">
-            <h2>Accessoires</h2>
-            <p>Accessoires et outils pour musiciens.</p>
+    <!-- ===== Partitions ===== -->
+    <section id="partitions">
+        <h2>Partitions</h2>
+        <p>Partitions pédagogiques pour débutants et intermédiaires.</p>
+    </section>
 
-            <article>
-                <h3>Accordeur chromatique</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Chromatic_tuner.jpg/800px-Chromatic_tuner.jpg"
-                     alt="Accordeur électronique chromatique pour instruments de musique"
-                     title="Accordeur chromatique">
-                <p>Un <abbr title="Accordeur Électronique Chromatique">AEC</abbr> pour accorder tous vos instruments avec précision.</p>
-                <p><a href="https://fr.wikipedia.org/wiki/Accordeur_(outil)">En savoir plus sur Wikipedia</a></p>
-            </article>
+    <!-- ===== Accessoires ===== -->
+    <section id="accessoires">
+        <h2>Accessoires</h2>
+        <p>Accordeurs, métronomes et outils de mesure sonore.</p>
+    </section>
 
-            <article>
-                <h3>Métronome</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Metronome.jpg/800px-Metronome.jpg"
-                     alt="Métronome mécanique pour travailler le rythme"
-                     title="Métronome mécanique">
-                <p>Métronome mécanique pour travailler votre rythme et votre précision.</p>
-                <p><a href="https://fr.wikipedia.org/wiki/M%C3%A9tronome">En savoir plus sur Wikipedia</a></p>
-            </article>
+    <!-- ===== Bibliographie (Zotero) ===== -->
+    <section id="bibliographie">
+        <h2>Bibliographie musicale</h2>
 
-            <article>
-                <h3>Décibelmètre</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Sound_level_meter.jpg/800px-Sound_level_meter.jpg"
-                     alt="Décibelmètre numérique pour mesurer le niveau sonore"
-                     title="Décibelmètre numérique">
-                <p>Mesurez le niveau sonore avec précision grâce à ce décibelmètre numérique.</p>
-                <p><a href="https://fr.wikipedia.org/wiki/Sonom%C3%A8tre">En savoir plus sur Wikipedia</a></p>
-            </article>
-        </section>
-    </main>
+        <ul>
+            <li>
+                Jollet, Jean-Clément et al. <em>Le Solfège Pour Les Nuls</em>.
+                <span class="Z3988" title="url_ver=Z39.88-2004&ctx_ver=Z39.88-2004&rfr_id=info:sid/zotero.org:2&rft_id=urn:isbn:2-7540-0586-2&rft_val_fmt=info:ofi/fmt:kev:mtx:book"></span>
+            </li>
 
-    <footer>
-        <p>&copy; 2025 Bonnes Ondes. Tous droits réservés.</p>
-    </footer>
+            <li>
+                Hauchard, Maurice. <em>Étude méthodique des positions – Violon</em>.
+                <span class="Z3988" title="url_ver=Z39.88-2004&ctx_ver=Z39.88-2004&rfr_id=info:sid/zotero.org:2&rft_id=urn:isbn:9790046210068&rft_val_fmt=info:ofi/fmt:kev:mtx:book"></span>
+            </li>
+
+            <li>
+                <a href="https://www.ircam.fr" target="_blank">IRCAM</a>
+                <span class="Z3988" title="url_ver=Z39.88-2004&ctx_ver=Z39.88-2004&rfr_id=info:sid/zotero.org:2&rft.type=webpage&rft.identifier=https://www.ircam.fr"></span>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Bonnes Ondes</p>
+</footer>
+
 </body>
 </html>
